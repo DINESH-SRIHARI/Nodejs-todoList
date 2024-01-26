@@ -1,0 +1,19 @@
+.hov{
+    transition: 0.5s;
+    position: relative;
+    font-size: 28px;
+}
+.hov::after{
+    content: ' ';
+    position: absolute;
+    bottom: 3px;
+    width: 0;
+    height: 2px;
+    left: 0;
+    background-color: blueviolet;
+    transition: 1s;
+}
+.hov:hover::after{
+    text-decoration: none;
+    width: 100%;
+}
